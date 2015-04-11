@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Droid Arabic Naskh';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/DroidNaskh-Regular.eot');
+  src: url('/assets/fonts/DroidNaskh-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/DroidNaskh-Regular.woff2') format('woff2'),
+       url('/assets/fonts/DroidNaskh-Regular.woff') format('woff'),
+       url('/assets/fonts/DroidNaskh-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Droid Arabic Naskh Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/DroidNaskh-Bold.eot');
+  src: url('/assets/fonts/DroidNaskh-Bold.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/DroidNaskh-Bold.woff2') format('woff2'),
+       url('/assets/fonts/DroidNaskh-Bold.woff') format('woff'),
+       url('/assets/fonts/DroidNaskh-Bold.ttf') format('truetype');
+}
+
+
+body {
+    font-family: "Droid Arabic Naskh", "nasim regular", serif;
+    line-height: 1.71429
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Droid Arabic Naskh Bold", "nasim bold", serif;
+}
+
+h1, .h1 {
+    font-size: 30px;
+}
+
+.footer {
+    font-size: 14px !important;
+    color: #808080;
+}
+
+.footer .dark {
+    background: none repeat scroll 0% 0% #131313;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.row {
+    max-width: 850px;
+}
