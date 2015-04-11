@@ -1,2 +1,2 @@
 # alimsvi.ir
-My website power by Nikola(static site generator)
+My website powered by Nikola(static site generator)

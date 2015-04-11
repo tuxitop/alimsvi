@@ -561,6 +561,9 @@ REDIRECTIONS = []
 #     ("icon", "/favicon.ico", "16x16"),
 #     ("icon", "/icon_128x128.png", "128x128"),
 # }
+FAVICONS = {
+     ("icon", "favicon.ico", "16x16"),
+}
 
 # Show only teasers in the index pages? Defaults to False.
 # INDEX_TEASERS = False
@@ -590,7 +593,8 @@ RSS_LINKS_APPEND_QUERY = False
 
 # A HTML fragment describing the license, for the sidebar.
 # (translatable)
-LICENSE = ""
+LICENSE = """
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="گواهینامه کریتیو کامنز" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />مطالب این وبسایت تحت گواهینامه بین‌المللی <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> در دسترس است."""
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 # LICENSE = """
@@ -601,7 +605,7 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = '{license}<br />Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a>          '
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -619,7 +623,7 @@ CONTENT_FOOTER_FORMATS = {
         (),
         {
             "email": BLOG_EMAIL,
-            "author": BLOG_AUTHOR,
+            "author": 'Ali Mousavi',
             "date": time.gmtime().tm_year,
             "license": LICENSE
         }

@@ -67,10 +67,17 @@
         </div>
         <!--End of body content-->
 
-        <footer>
-            {{ content_footer }}
-            {{ template_hooks['page_footer']() }}
-        </footer>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="dark">
+        <div class="container">
+	    <div class="copyright col-md-12 text-center">
+                {{ content_footer }}
+                {{ template_hooks['page_footer']() }}
+            </div>
+	</div>
     </div>
 </div>
 
