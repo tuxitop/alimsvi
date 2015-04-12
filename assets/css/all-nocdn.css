@@ -7199,9 +7199,16 @@ table.codetable {
 }
 
 
+a {
+    color: #036564;
+    text-decoration: none !important;
+}
+
 body {
     font-family: "Droid Arabic Naskh", "nasim regular", serif;
-    line-height: 1.71429
+    line-height: 1.71429;
+    background-color: #F4EAD5;
+    font-size: 15px
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -7218,11 +7225,53 @@ h1, .h1 {
 }
 
 .footer .dark {
-    background: none repeat scroll 0% 0% #131313;
+    background: none repeat scroll 0% 0% #033640;
     padding: 20px;
     margin-top: 20px;
 }
 
 .row {
-    max-width: 850px;
+    border-top: 2px solid;
+    border-top-color: #C6A49A;
+}
+
+.postindex {
+    max-width: 1000px;
+    margin-right: 85px;
+}
+
+.entry-content p {
+    text-indent: 2em;
+}
+
+.title-bar{
+    font-size: 62px;
+    font-family: "Droid Arabic Naskh Bold", "nasim bold", serif;
+    padding: 0 0 50px 0;
+}
+
+.nav li a {
+    padding: 7px 0 0 15px;
+    color: #C6A49A !important;
+}
+
+.nav li a:hover {
+    color: #774F38 !important;
+}
+
+.navbar{
+    min-height: 40px;
+    height: 40px;
+}
+
+.navbar-nav{
+    padding: 0;
+}
+
+.navbar-inverse {
+    background-color: #F4EAD5;
+    border: none;
+}
+.navbar-fixed-top {
+    position: absolute;
 }
