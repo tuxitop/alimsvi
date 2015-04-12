@@ -100,16 +100,16 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # This is a dict.  The keys are languages, and values are tuples.
 #
 # For regular links:
-#     ('http://getnikola.com/', 'Nikola Homepage')
+# ('http://getnikola.com/', 'Nikola Homepage')
 #
-# For submenus:
+#For submenus:
+# (
 #     (
-#         (
-#             ('http://apple.com/', 'Apple'),
-#             ('http://orange.com/', 'Orange'),
-#         ),
-#         'Fruits'
-#     )
+#         ('http://apple.com/', 'Apple'),
+#         ('http://orange.com/', 'Orange'),
+#     ),
+#     'Fruits'
+# )
 #
 # WARNING: Support for submenus is theme-dependent.
 #          Only one level of submenus is supported.
@@ -123,6 +123,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/blog/", "خانه"),
         ("/archive.html", "آرشیو"),
         ("/categories/index.html", "برچسب‌ها"),
         ("/rss.xml", "خوراک"),
@@ -151,6 +152,7 @@ TIMEZONE = "Asia/Tehran"
 # Date format used to display post dates.
 # (str used by datetime.datetime.strftime)
 # DATE_FORMAT = '%Y-%m-%d %H:%M'
+DATE_FORMAT = '%B %d, %Y'
 
 # Date format used to display post dates, if local dates are used.
 # (str used by moment.js)
@@ -202,8 +204,8 @@ TIMEZONE = "Asia/Tehran"
 #
 
 POSTS = (
-    ("posts/*.rst", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
+    ("blog/posts/*.rst", "blog", "post.tmpl"),
+    ("blog/posts/*.txt", "blog", "post.tmpl"),
 )
 PAGES = (
     ("stories/*.rst", "stories", "story.tmpl"),
@@ -324,7 +326,7 @@ WRITE_TAG_CLOUD = True
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "blog"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False
@@ -372,7 +374,7 @@ WRITE_TAG_CLOUD = True
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = []
+REDIRECTIONS = [("index.html", "blog/")]
 
 # Presets of commands to execute to deploy. Can be anything, for
 # example, you may use rsync:

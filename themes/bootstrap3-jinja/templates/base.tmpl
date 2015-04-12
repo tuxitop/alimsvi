@@ -27,9 +27,9 @@
                 <img src="{{ logo_url }}" alt="{{ blog_title }}" id="logo">
             {% endif %}
 
-            {% if show_blog_title %}
+<!--            {% if show_blog_title %}
                 <span id="blog-title">{{ blog_title }}</span>
-            {% endif %}
+            {% endif %} -->
             </a>
         </div><!-- /.navbar-header -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -56,6 +56,13 @@
     </div><!-- /.container -->
 </nav>
 
+<div class="title-bar">
+    <div class="container text-center">
+        {% if show_blog_title %}
+            <span id="blog-title">{{ blog_title }}</span>
+        {% endif %}
+    </div>
+</div>
 <!-- End of Menubar -->
 
 <div class="container" id="content" role="main">
