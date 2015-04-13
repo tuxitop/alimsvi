@@ -28,7 +28,7 @@ SITE_URL = "http://alimsvi.ir/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://alimsvi.ir/"
 BLOG_EMAIL = "ali.mousavi@gmail.com"
-BLOG_DESCRIPTION = "در تلاش برای پردازش جرعه‌ای از این جام پُر داده"  # (translatable)
+BLOG_DESCRIPTION = "در تکاپوی پردازش جرعه‌ای از این جام پُر داده"  # (translatable)
 
 # Nikola is multilingual!
 #
