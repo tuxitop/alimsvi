@@ -203,8 +203,8 @@ DATE_FORMAT = '%d %B %Y'
 #
 
 POSTS = (
-    ("blog/posts/*.rst", "blog", "post.tmpl"),
-    ("blog/posts/*.txt", "blog", "post.tmpl"),
+    ("blog/posts/*.rst", "blog/posts", "post.tmpl"),
+    ("blog/posts/*.txt", "blog/posts", "post.tmpl"),
 )
 PAGES = (
     ("stories/*.rst", "stories", "story.tmpl"),
