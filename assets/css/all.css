@@ -653,7 +653,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1, .h1 {
-    font-size: 30px;
+     font-size: 30px;
+}
+
+h2, .h2 {
+     font-size: 24px;
 }
 
 .footer {
@@ -667,12 +671,14 @@ h1, .h1 {
     margin-top: 20px;
 }
 
-.row {
+article.h-entry {
     border-top: 2px solid;
     border-top-color: #C6A49A;
+    padding-top: 10px;
+    margin-top: 40px;
 }
 
-.postindex {
+article.h-entry > header, article.h-entry > div.e-content {
     max-width: 1000px;
     margin-right: 85px;
 }
@@ -681,10 +687,37 @@ h1, .h1 {
     text-indent: 2em;
 }
 
+.entry-content ul li p {
+    text-indent: 0;
+}
+
+.entry-content ul.simple {
+     padding-bottom: 30px;
+}
+
+.footnote-reference{
+    margin-right: -5px;
+}
+
+table.footnote {
+    border-left: none;
+    border-right: 2px solid #CCC;
+    font-size: small;
+    margin-top: -6px;
+}
+
+table.docutils td, table.docutils th, table.docinfo td, table.docinfo th {
+    vertical-align: initial;
+}
+
+table.docutils td.label{
+    font-size: 13px;
+}
+
 .title-bar{
     font-size: 62px;
     font-family: "Droid Arabic Naskh Bold", "nasim bold", serif;
-    padding: 0 0 90px 0;
+    padding: 0 0 50px 0;
 }
 
 .title-bar a, .title-bar a:hover {
