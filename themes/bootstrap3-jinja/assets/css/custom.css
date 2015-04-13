@@ -47,7 +47,7 @@ h1, .h1 {
 
 .footer .dark {
     background: none repeat scroll 0% 0% #033640;
-    padding: 20px;
+    padding: 20px 0 10px 0;
     margin-top: 20px;
 }
 
@@ -68,7 +68,17 @@ h1, .h1 {
 .title-bar{
     font-size: 62px;
     font-family: "Droid Arabic Naskh Bold", "nasim bold", serif;
-    padding: 0 0 50px 0;
+    padding: 0 0 90px 0;
+}
+
+.title-bar a, .title-bar a:hover {
+    color: #000;
+}
+
+.blog-desc{
+    line-height: 0;
+    font-family: "Droid Arabic Naskh", "nasim", serif;
+    font-size: 24px;
 }
 
 .nav li a {
@@ -95,4 +105,25 @@ h1, .h1 {
 }
 .navbar-fixed-top {
     position: absolute;
+}
+
+
+.navbar-left a.fa.fa-github:hover {
+    color: #000 !important;
+}
+
+.navbar-left a.fa.fa-facebook:hover {
+    color: #3B5998 !important;
+}
+
+.navbar-left a.fa.fa-twitter:hover{
+    color: #55ACEE !important;
+}
+
+.footer a.fa.fa-rss-square{
+    color: #808080;
+}
+
+.footer a.fa.fa-rss-square:hover{
+    color: #FF7500;
 }

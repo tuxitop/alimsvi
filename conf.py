@@ -17,10 +17,10 @@ import time
 
 
 # Data about this site
-#BLOG_AUTHOR = "\u0639\u0644\u06cc \u0645\u0648\u0633\u0648\u06cc"  # (translatable)
+# BLOG_AUTHOR = "\u0639\u0644\u06cc \u0645\u0648\u0633\u0648\u06cc"  # (translatable)
 BLOG_AUTHOR = "علی موسوی"  # (translatable)
-#BLOG_TITLE = "\u062d\u0644\u0627\u0637 \u067e\u0634\u062a\u06cc \u06cc\u06a9 \u062f\u0648\u0633\u062a\u062f\u0627\u0631 \u0646\u0631\u0645\u200c\u0627\u0641\u0632\u0627\u0631\u0647\u0627\u06cc \u0622\u0632\u0627\u062f"  # (translatable)
-BLOG_TITLE = "گذرگاه آزاد"  # (translatable)
+# BLOG_TITLE = "\u062d\u0644\u0627\u0637 \u067e\u0634\u062a\u06cc \u06cc\u06a9 \u062f\u0648\u0633\u062a\u062f\u0627\u0631 \u0646\u0631\u0645\u200c\u0627\u0641\u0632\u0627\u0631\u0647\u0627\u06cc \u0622\u0632\u0627\u062f"  # (translatable)
+BLOG_TITLE = "‌داده‌های خام"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
 SITE_URL = "http://alimsvi.ir/"
@@ -28,7 +28,7 @@ SITE_URL = "http://alimsvi.ir/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://alimsvi.ir/"
 BLOG_EMAIL = "ali.mousavi@gmail.com"
-# BLOG_DESCRIPTION = "حکایت کی‌برد علی موسوی از لینوکس، پایتون، نرم‌افزارهای آزاد و زندگی"  # (translatable)
+BLOG_DESCRIPTION = "در تلاش برای پردازش جرعه‌ای از این جام پُر داده"  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -102,7 +102,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 # For regular links:
 # ('http://getnikola.com/', 'Nikola Homepage')
 #
-#For submenus:
+# For submenus:
 # (
 #     (
 #         ('http://apple.com/', 'Apple'),
@@ -126,7 +126,6 @@ NAVIGATION_LINKS = {
         ("/blog/", "خانه"),
         ("/archive.html", "آرشیو"),
         ("/categories/index.html", "برچسب‌ها"),
-        ("/rss.xml", "خوراک"),
     ),
 }
 
@@ -152,7 +151,7 @@ TIMEZONE = "Asia/Tehran"
 # Date format used to display post dates.
 # (str used by datetime.datetime.strftime)
 # DATE_FORMAT = '%Y-%m-%d %H:%M'
-DATE_FORMAT = '%B %d, %Y'
+DATE_FORMAT = '%d %B %Y'
 
 # Date format used to display post dates, if local dates are used.
 # (str used by moment.js)
@@ -607,7 +606,7 @@ LICENSE = """
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = '{license}<br />Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a>          '
+CONTENT_FOOTER = '{license}<br />Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a><br/><a class="fa fa-rss-square fa-2x" href="/rss.xml"></a>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -636,12 +635,12 @@ CONTENT_FOOTER_FORMATS = {
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, googleplus, intensedebate, isso, livefyre, muut
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = ""
+COMMENT_SYSTEM = "disqus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = ""
+COMMENT_SYSTEM_ID = "alimsvi"
 
 # Enable annotations using annotateit.org?
 # If set to False, you can still enable them for individual posts and pages
@@ -752,8 +751,8 @@ COMMENT_SYSTEM_ID = ""
 # Social buttons. This is sample code for AddThis (which was the default for a
 # long time). Insert anything you want here, or even make it empty.
 # (translatable)
-# SOCIAL_BUTTONS_CODE = """
 SOCIAL_BUTTONS_CODE = ""
+# SOCIAL_BUTTONS_CODE = """
 # <!-- Social buttons -->
 # <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
 # <a class="addthis_button_more">Share</a>
@@ -769,7 +768,7 @@ SOCIAL_BUTTONS_CODE = ""
 
 # Show link to source for the posts?
 # Formerly known as HIDE_SOURCELINK (inverse)
-# SHOW_SOURCELINK = True
+SHOW_SOURCELINK = False
 # Copy the source files for your pages?
 # Setting it to False implies SHOW_SOURCELINK = False
 # COPY_SOURCES = True
