@@ -730,13 +730,21 @@ table.docutils td.label{
     font-size: 24px;
 }
 
+.navbar-nav > li > a {
+    line-height: 5px;
+}
+
 .nav li a {
-    padding: 7px 0 0 15px;
+    margin: 0 -15 0 0;
     color: #C6A49A !important;
 }
 
 .nav li a:hover {
     color: #774F38 !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: inherit;
 }
 
 .navbar{
