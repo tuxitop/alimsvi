@@ -46,7 +46,7 @@
 
 .. _گیت‌هاب: https://github.com/
 
-.. _پروژه وبسایت در گیت‌هاب: https://github.com/tuxitop/alimsvi
+.. _پروژه وبسایت در گیت‌هاب: https://github.com/tuxitop/alimsvi.ir/
 
 محتوا
 -----
