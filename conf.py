@@ -124,8 +124,8 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/blog/", "خانه"),
-        ("/archive.html", "آرشیو"),
-        ("/categories/index.html", "برچسب‌ها"),
+        ("/blog/archive.html", "آرشیو"),
+        ("/blog/categories/index.html", "برچسب‌ها"),
     ),
 }
 
@@ -176,6 +176,7 @@ DATE_FORMAT = '%d %B %Y'
 # LOCALE_FALLBACK = locale to use when an explicit locale is unavailable
 # LOCALE_DEFAULT = locale to use for languages not mentioned in LOCALES; if
 # not set the default Nikola mapping is used.
+LOCALE_DEFAULT="fa_IR"
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 #
@@ -280,7 +281,7 @@ WRITE_TAG_CLOUD = True
 # output / TRANSLATION[lang] / TAG_PATH / index.html (list of tags)
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
-# TAG_PATH = "categories"
+TAG_PATH = "blog/categories"
 
 # If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain
 # the posts themselves. If set to False, it will be just a list of links.
@@ -341,7 +342,7 @@ INDEX_PATH = "blog"
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / index.html
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / MONTH / DAY / index.html
-# ARCHIVE_PATH = ""
+ARCHIVE_PATH = "blog"
 # ARCHIVE_FILENAME = "archive.html"
 
 # If ARCHIVES_ARE_INDEXES is set to True, each archive page which contains a list
@@ -357,7 +358,7 @@ INDEX_PATH = "blog"
 
 # Final location for the blog main RSS feed is:
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
-# RSS_PATH = ""
+RSS_PATH = "blog"
 
 # Number of posts in RSS feeds
 # FEED_LENGTH = 10
@@ -606,7 +607,7 @@ LICENSE = """
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = '{license}<br />Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a><br/><a class="fa fa-rss-square fa-2x" href="/rss.xml"></a>'
+CONTENT_FOOTER = '{license}<br />Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a><br/><a class="fa fa-rss-square fa-2x" href="/blog/rss.xml"></a>'
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
