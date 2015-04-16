@@ -31,7 +31,7 @@
 
 .. _نرم‌افزارهای زیادی: https://staticsitegenerators.net/
 
-.. _گزینه‌های خوب زیادی: https://staticsitegenerators.net/
+.. _گزینه‌های خوب زیادی: https://www.staticgen.com/
 
 .. _reStructuredText: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 

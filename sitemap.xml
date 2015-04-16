@@ -5,55 +5,55 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>http://alimsvi.ir/2015/index.html</loc>
-  <lastmod>2015-04-14</lastmod>
+  <loc>http://alimsvi.ir/blog/2015/index.html</loc>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
-  <loc>http://alimsvi.ir/archive.html</loc>
-  <lastmod>2015-04-14</lastmod>
+  <loc>http://alimsvi.ir/blog/archive.html</loc>
+  <lastmod>2015-04-16</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/cat_trhy-wb.html</loc>
+  <lastmod>2015-04-16</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/gyt.html</loc>
+  <lastmod>2015-04-16</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/index.html</loc>
+  <lastmod>2015-04-16</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/nrmfzr-azd.html</loc>
+  <lastmod>2015-04-16</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/nykhwl.html</loc>
+  <lastmod>2015-04-16</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/trhy-wb.html</loc>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/index.html</loc>
-  <lastmod>2015-04-14</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/posts/salam-donya.html</loc>
-  <lastmod>2015-04-14</lastmod>
- </url>
- <url>
-  <loc>http://alimsvi.ir/categories/cat_trhy-wb.html</loc>
-  <lastmod>2015-04-14</lastmod>
- </url>
- <url>
-  <loc>http://alimsvi.ir/categories/gyt.html</loc>
-  <lastmod>2015-04-14</lastmod>
- </url>
- <url>
-  <loc>http://alimsvi.ir/categories/index.html</loc>
-  <lastmod>2015-04-14</lastmod>
- </url>
- <url>
-  <loc>http://alimsvi.ir/categories/nrmfzr-azd.html</loc>
-  <lastmod>2015-04-14</lastmod>
- </url>
- <url>
-  <loc>http://alimsvi.ir/categories/nykhwl.html</loc>
-  <lastmod>2015-04-14</lastmod>
- </url>
- <url>
-  <loc>http://alimsvi.ir/categories/trhy-wb.html</loc>
-  <lastmod>2015-04-14</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/index.html</loc>
-  <lastmod>2015-04-14</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/listings/hello.py.html</loc>
-  <lastmod>2015-04-14</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/listings/index.html</loc>
-  <lastmod>2015-04-14</lastmod>
+  <lastmod>2015-04-16</lastmod>
  </url>
 </urlset>
