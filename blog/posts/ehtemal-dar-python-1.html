@@ -5,7 +5,7 @@ article: http://ogp.me/ns/article#
 " dir="rtl" lang="fa">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="احتمالات و روش مونت کارلو برای طراحی هوش مصنوعی">
+<meta name="description" content="احتمالات و روش مونت کارلو برای طراحی هوش مصنوعی در بازی‌ها">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>بررسی نظریه احتمالات در پایتون - بخش اول | ‌داده‌های خام</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
@@ -25,13 +25,13 @@ MathJax.Hub.Config({
         scale: 70
     }
 });
-</script><!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="description" itemprop="description" content="احتمالات و روش مونت کارلو برای طراحی هوش مصنوعی">
+</script><!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="description" itemprop="description" content="احتمالات و روش مونت کارلو برای طراحی هوش مصنوعی در بازی‌ها">
 <meta name="author" content="علی موسوی">
 <link rel="prev" href="salam-donya.html" title="سلام، دنیا!" type="text/html">
 <meta property="og:site_name" content="‌داده‌های خام">
 <meta property="og:title" content="بررسی نظریه احتمالات در پایتون - بخش اول">
 <meta property="og:url" content="http://alimsvi.ir/blog/posts/ehtemal-dar-python-1.html">
-<meta property="og:description" content="احتمالات و روش مونت کارلو برای طراحی هوش مصنوعی">
+<meta property="og:description" content="احتمالات و روش مونت کارلو برای طراحی هوش مصنوعی در بازی‌ها">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-06-12T18:51:51+04:30">
 <meta property="article:tag" content="mathjax">
@@ -112,7 +112,7 @@ MathJax.Hub.Config({
 
 
             
-                <meta name="description" itemprop="description" content="احتمالات و روش مونت کارلو برای طراحی هوش مصنوعی"></p>
+                <meta name="description" itemprop="description" content="احتمالات و روش مونت کارلو برای طراحی هوش مصنوعی در بازی‌ها"></p>
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
@@ -121,18 +121,18 @@ MathJax.Hub.Config({
 <p>از اونجا که ایده‌ی تاس اینه که ما به یک روشی یک عدد تصادفی بین ۱ تا ۶ انتخاب کنیم، من این کار رو به راحتی با استفاده از ماژول random در پایتون شبیه‌سازی می‌کنم تا بتونم بعدا بررسیش کنم:</p>
 <p><a class="reference external" href="../../listings/die_probability.py.html">die_probability.py</a></p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="ehtemal-dar-python-1.html#rest_code_247ff41011b2468b99162d9b6759ba80-1">1</a>
-<a href="ehtemal-dar-python-1.html#rest_code_247ff41011b2468b99162d9b6759ba80-2">2</a>
-<a href="ehtemal-dar-python-1.html#rest_code_247ff41011b2468b99162d9b6759ba80-3">3</a>
-<a href="ehtemal-dar-python-1.html#rest_code_247ff41011b2468b99162d9b6759ba80-4">4</a>
-<a href="ehtemal-dar-python-1.html#rest_code_247ff41011b2468b99162d9b6759ba80-5">5</a>
-<a href="ehtemal-dar-python-1.html#rest_code_247ff41011b2468b99162d9b6759ba80-6">6</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_247ff41011b2468b99162d9b6759ba80-1"></a><span class="kn">import</span> <span class="nn">random</span>
-<a name="rest_code_247ff41011b2468b99162d9b6759ba80-2"></a>
-<a name="rest_code_247ff41011b2468b99162d9b6759ba80-3"></a>
-<a name="rest_code_247ff41011b2468b99162d9b6759ba80-4"></a><span class="k">def</span> <span class="nf">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">):</span>
-<a name="rest_code_247ff41011b2468b99162d9b6759ba80-5"></a>    <span class="s">'simulates rolling a die'</span>
-<a name="rest_code_247ff41011b2468b99162d9b6759ba80-6"></a>    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="ehtemal-dar-python-1.html#rest_code_fd8776e4dea3497f842185fd7cfc4b5b-1">1</a>
+<a href="ehtemal-dar-python-1.html#rest_code_fd8776e4dea3497f842185fd7cfc4b5b-2">2</a>
+<a href="ehtemal-dar-python-1.html#rest_code_fd8776e4dea3497f842185fd7cfc4b5b-3">3</a>
+<a href="ehtemal-dar-python-1.html#rest_code_fd8776e4dea3497f842185fd7cfc4b5b-4">4</a>
+<a href="ehtemal-dar-python-1.html#rest_code_fd8776e4dea3497f842185fd7cfc4b5b-5">5</a>
+<a href="ehtemal-dar-python-1.html#rest_code_fd8776e4dea3497f842185fd7cfc4b5b-6">6</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_fd8776e4dea3497f842185fd7cfc4b5b-1"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="rest_code_fd8776e4dea3497f842185fd7cfc4b5b-2"></a>
+<a name="rest_code_fd8776e4dea3497f842185fd7cfc4b5b-3"></a>
+<a name="rest_code_fd8776e4dea3497f842185fd7cfc4b5b-4"></a><span class="k">def</span> <span class="nf">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">):</span>
+<a name="rest_code_fd8776e4dea3497f842185fd7cfc4b5b-5"></a>    <span class="s">'simulates rolling a die'</span>
+<a name="rest_code_fd8776e4dea3497f842185fd7cfc4b5b-6"></a>    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 </pre></td>
 </tr></table>
 <p>بر اساس چیزی که ریاضیات می‌گه، فرض کنید ما یک تاس عادلانه‌ی ۶ وجهی داشته باشیم که روی هر وجه اون یکی از اعداد بازه‌‌ی از ۱ تا ۶ نوشته شده باشه. هر عددی رو که در این بازه در نظر بگیریم و تاس رو بریزیم، احتمال این که عدد مورد نظر ما بیاد
@@ -141,58 +141,58 @@ MathJax.Hub.Config({
 <p>از اونجایی که من حوصله ندارم یک تاس رو «بارها» بریزم و نتیجه‌ها رو یادداشت کنم و در آخر میانگین مورد نظرم رو بررسی کنم، چند خط کد پایتون می‌نویسم و این مساله رو با یک نمودار بررسی می‌کنم:</p>
 <p><a class="reference external" href="../../listings/die_probability.py.html">die_probability.py</a></p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-1"> 1</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-2"> 2</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-3"> 3</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-4"> 4</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-5"> 5</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-6"> 6</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-7"> 7</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-8"> 8</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-9"> 9</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-10">10</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-11">11</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-12">12</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-13">13</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-14">14</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-15">15</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-16">16</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-17">17</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-18">18</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-19">19</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-20">20</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-21">21</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-22">22</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-23">23</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-24">24</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-25">25</a>
-<a href="ehtemal-dar-python-1.html#rest_code_cce2ceea241941309221b287020b84b6-26">26</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_cce2ceea241941309221b287020b84b6-1"></a><span class="k">def</span> <span class="nf">plot_fairness_line</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">side</span><span class="p">):</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-2"></a>    <span class="sd">'''tests the difference between expected average and the real average</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-3"></a><span class="sd">    produced after rolling a die for a range of trials.'''</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-4"></a>    <span class="n">diff_data</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-5"></a>    <span class="n">num_trials_data</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-6"></a>    <span class="k">for</span> <span class="n">num_trials</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-7"></a>        <span class="n">side_count</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-8"></a>        <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-9"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-10"></a>            <span class="k">if</span> <span class="n">result</span> <span class="o">==</span> <span class="n">side</span><span class="p">:</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-11"></a>                <span class="n">side_count</span> <span class="o">+=</span> <span class="mi">1</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-12"></a>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-13"></a>        <span class="n">statistical_prb</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">6</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-14"></a>        <span class="n">computed_prb</span> <span class="o">=</span> <span class="n">side_count</span> <span class="o">/</span> <span class="n">num_trials</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-15"></a>        <span class="n">diff_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">computed_prb</span> <span class="o">-</span> <span class="n">statistical_prb</span><span class="p">)</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-16"></a>        <span class="n">num_trials_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_trials</span><span class="p">)</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-17"></a>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-18"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">num_trials_data</span><span class="p">,</span> <span class="n">diff_data</span><span class="p">)</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-19"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Number of trials ran on dice."</span><span class="p">)</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-20"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Difference between expected and computed results"</span><span class="p">)</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-21"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-22"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-23"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-24"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-25"></a>
-<a name="rest_code_cce2ceea241941309221b287020b84b6-26"></a><span class="n">plot_fairness_line</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-1"> 1</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-2"> 2</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-3"> 3</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-4"> 4</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-5"> 5</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-6"> 6</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-7"> 7</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-8"> 8</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-9"> 9</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-10">10</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-11">11</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-12">12</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-13">13</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-14">14</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-15">15</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-16">16</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-17">17</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-18">18</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-19">19</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-20">20</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-21">21</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-22">22</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-23">23</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-24">24</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-25">25</a>
+<a href="ehtemal-dar-python-1.html#rest_code_155e2d47bb464d42912bde2cea4f3186-26">26</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_155e2d47bb464d42912bde2cea4f3186-1"></a><span class="k">def</span> <span class="nf">plot_fairness_line</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">side</span><span class="p">):</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-2"></a>    <span class="sd">'''tests the difference between expected average and the real average</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-3"></a><span class="sd">    produced after rolling a die for a range of trials.'''</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-4"></a>    <span class="n">diff_data</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-5"></a>    <span class="n">num_trials_data</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-6"></a>    <span class="k">for</span> <span class="n">num_trials</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-7"></a>        <span class="n">side_count</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-8"></a>        <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-9"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-10"></a>            <span class="k">if</span> <span class="n">result</span> <span class="o">==</span> <span class="n">side</span><span class="p">:</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-11"></a>                <span class="n">side_count</span> <span class="o">+=</span> <span class="mi">1</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-12"></a>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-13"></a>        <span class="n">statistical_prb</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">6</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-14"></a>        <span class="n">computed_prb</span> <span class="o">=</span> <span class="n">side_count</span> <span class="o">/</span> <span class="n">num_trials</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-15"></a>        <span class="n">diff_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">computed_prb</span> <span class="o">-</span> <span class="n">statistical_prb</span><span class="p">)</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-16"></a>        <span class="n">num_trials_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_trials</span><span class="p">)</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-17"></a>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-18"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">num_trials_data</span><span class="p">,</span> <span class="n">diff_data</span><span class="p">)</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-19"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Number of trials ran on dice."</span><span class="p">)</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-20"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Difference between expected and computed results"</span><span class="p">)</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-21"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-22"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-23"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-24"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-25"></a>
+<a name="rest_code_155e2d47bb464d42912bde2cea4f3186-26"></a><span class="n">plot_fairness_line</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></td>
 </tr></table>
 <p>نموداری که با اجرای این کد نمایش داده می‌شه مشخص می‌کنه که هر چه تاس بیشتری ریخته شده اختلاف میانگین با <span class="math">\(\frac{1}{6}\)</span> بیشتر به صفر نزدیک شده:</p>
@@ -202,42 +202,42 @@ MathJax.Hub.Config({
 ، می‌تونیم انتظار داشته باشیم که هر یک از اعداد روی تاس حدوداً ۵۰۰ بار ریخته بشن. بنابراین می‌تونیم چند خط کد دیگه بنویسم که ۳۰۰۰ بار تابع ما رو اجرا کنه، اعدادی رو که ریخته می‌شن بشمره و در نهایت نتیجه رو در یک نمودار دیگه بررسی کنیم:</p>
 <p><a class="reference external" href="../../listings/die_probability.py.html">die_probability.py</a></p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-1"> 1</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-2"> 2</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-3"> 3</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-4"> 4</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-5"> 5</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-6"> 6</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-7"> 7</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-8"> 8</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-9"> 9</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-10">10</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-11">11</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-12">12</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-13">13</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-14">14</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-15">15</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-16">16</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-17">17</a>
-<a href="ehtemal-dar-python-1.html#rest_code_261770fb226041bb9a2112f7a56c3712-18">18</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_261770fb226041bb9a2112f7a56c3712-1"></a><span class="k">def</span> <span class="nf">plot_fairness_bar</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">num_trials</span><span class="p">):</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-2"></a>    <span class="sd">'''rolls the die for "num_trials" times and calculates the number of</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-3"></a><span class="sd">    times each side of the die was shown, it then shows a bar plot'''</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-4"></a>    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-5"></a>    <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-6"></a>        <span class="n">data</span><span class="p">[</span><span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-7"></a>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-8"></a>    <span class="n">x_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-9"></a>    <span class="n">y_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-10"></a>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-11"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s">'center'</span><span class="p">)</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-12"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-13"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"side of the die"</span><span class="p">)</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-14"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Number of times the number produced"</span><span class="p">)</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-15"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-16"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-17"></a>
-<a name="rest_code_261770fb226041bb9a2112f7a56c3712-18"></a><span class="n">plot_fairness_bar</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-1"> 1</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-2"> 2</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-3"> 3</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-4"> 4</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-5"> 5</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-6"> 6</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-7"> 7</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-8"> 8</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-9"> 9</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-10">10</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-11">11</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-12">12</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-13">13</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-14">14</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-15">15</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-16">16</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-17">17</a>
+<a href="ehtemal-dar-python-1.html#rest_code_a29f498e77464042a6b473718f19252e-18">18</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_a29f498e77464042a6b473718f19252e-1"></a><span class="k">def</span> <span class="nf">plot_fairness_bar</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">num_trials</span><span class="p">):</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-2"></a>    <span class="sd">'''rolls the die for "num_trials" times and calculates the number of</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-3"></a><span class="sd">    times each side of the die was shown, it then shows a bar plot'''</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-4"></a>    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-5"></a>    <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-6"></a>        <span class="n">data</span><span class="p">[</span><span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-7"></a>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-8"></a>    <span class="n">x_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-9"></a>    <span class="n">y_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-10"></a>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-11"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s">'center'</span><span class="p">)</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-12"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-13"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"side of the die"</span><span class="p">)</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-14"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Number of times the number produced"</span><span class="p">)</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-15"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-16"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-17"></a>
+<a name="rest_code_a29f498e77464042a6b473718f19252e-18"></a><span class="n">plot_fairness_bar</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
 </pre></td>
 </tr></table>
 <p>نمودار به دست اومده این مساله رو تایید می‌کنه:</p>
