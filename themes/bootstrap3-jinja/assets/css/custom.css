@@ -29,7 +29,16 @@ body {
     font-family: "Droid Arabic Naskh", "nasim regular", serif;
     line-height: 1.71429;
     background-color: #F4EAD5;
-    font-size: 15px
+    font-size: 16px
+}
+
+blockquote p, blockquote {
+    font-size: 15.5px;
+}
+
+blockquote {
+    border-left: none;
+    border-right: 5px solid #ccc;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -67,14 +76,16 @@ article.h-entry > header, article.h-entry > div.e-content {
     margin-right: 85px;
 }
 
+/*
 .entry-content p {
     text-indent: 2em;
 }
 
+
 .entry-content ul li p {
     text-indent: 0;
 }
-
+*/
 .entry-content ul.simple {
      padding-bottom: 30px;
 }
