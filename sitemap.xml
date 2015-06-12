@@ -6,54 +6,78 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://alimsvi.ir/blog/2015/index.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/archive.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/brnmhnwysy.html</loc>
+  <lastmod>2015-06-12</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/cat_brnmhnwysy.html</loc>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/cat_trhy-wb.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/gyt.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/index.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/mathjax.html</loc>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/nrmfzr-azd.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/nykhwl.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/pytwn.html</loc>
+  <lastmod>2015-06-12</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/categories/rydyt.html</loc>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/trhy-wb.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/index.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/posts/ehtemal-dar-python-1.html</loc>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/posts/salam-donya.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
-  <loc>http://alimsvi.ir/index.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <loc>http://alimsvi.ir/listings/die_probability.py.html</loc>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/listings/hello.py.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/listings/index.html</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </url>
 </urlset>

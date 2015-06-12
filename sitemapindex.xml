@@ -5,31 +5,51 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://alimsvi.ir/blog/categories/brnmhnwysy.xml</loc>
+  <lastmod>2015-06-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://alimsvi.ir/blog/categories/cat_brnmhnwysy.xml</loc>
+  <lastmod>2015-06-12</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://alimsvi.ir/blog/categories/cat_trhy-wb.xml</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/gyt.xml</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://alimsvi.ir/blog/categories/mathjax.xml</loc>
+  <lastmod>2015-06-12</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/nrmfzr-azd.xml</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/nykhwl.xml</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://alimsvi.ir/blog/categories/pytwn.xml</loc>
+  <lastmod>2015-06-12</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://alimsvi.ir/blog/categories/rydyt.xml</loc>
+  <lastmod>2015-06-12</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/trhy-wb.xml</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/rss.xml</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/sitemap.xml</loc>
-  <lastmod>2015-04-16</lastmod>
+  <lastmod>2015-06-12</lastmod>
  </sitemap>
 </sitemapindex>

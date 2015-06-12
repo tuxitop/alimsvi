@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="die_probability.py">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>die_probability.py | ‌داده‌های خام</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../blog/rss.xml">
+<link rel="canonical" href="http://alimsvi.ir/listings/die_probability.py.html">
+<link rel="icon" href="favicon.ico" sizes="16x16">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}},
+        scale: 70
+    }
+});
+</script><!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">متن اصلی را نادیده بگیر</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://alimsvi.ir/">
+
+<!--                            <span id="blog-title">‌داده‌های خام</span>
+ -->
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../blog/">خانه</a>
+                </li>
+<li>
+<a href="../blog/archive.html">آرشیو</a>
+                </li>
+<li>
+<a href="../blog/categories/index.html">برچسب‌ها</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-left">
+<li><a class="fa fa-github fa-lg" href="https://github.com/tuxitop"></a></li>
+		<li><a class="fa fa-facebook fa-lg" href="https://www.facebook.com/mousavi.ali"></a></li>
+		<li><a class="fa fa-twitter fa-lg" href="https://twitter.com/tuxitop"></a></li>
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><div class="title-bar">
+    <div class="container text-center">
+            <div class="blog-title">
+            <a class="title-brand" href="../blog/">
+            <span id="blog-title">‌داده‌های خام</span>
+            </a>
+            </div>
+            <div class="blog-desc">
+	       <span id="blog-desc">در تکاپوی پردازش جرعه‌ای از این جام پُر داده</span>
+</div>
+    </div>
+</div>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+<nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href=".">listings</a></li>
+                <li>die_probability.py</li>
+</ul></nav><table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingsdie_probabilitypy-1"> 1</a>
+<a href="#listingsdie_probabilitypy-2"> 2</a>
+<a href="#listingsdie_probabilitypy-3"> 3</a>
+<a href="#listingsdie_probabilitypy-4"> 4</a>
+<a href="#listingsdie_probabilitypy-5"> 5</a>
+<a href="#listingsdie_probabilitypy-6"> 6</a>
+<a href="#listingsdie_probabilitypy-7"> 7</a>
+<a href="#listingsdie_probabilitypy-8"> 8</a>
+<a href="#listingsdie_probabilitypy-9"> 9</a>
+<a href="#listingsdie_probabilitypy-10">10</a>
+<a href="#listingsdie_probabilitypy-11">11</a>
+<a href="#listingsdie_probabilitypy-12">12</a>
+<a href="#listingsdie_probabilitypy-13">13</a>
+<a href="#listingsdie_probabilitypy-14">14</a>
+<a href="#listingsdie_probabilitypy-15">15</a>
+<a href="#listingsdie_probabilitypy-16">16</a>
+<a href="#listingsdie_probabilitypy-17">17</a>
+<a href="#listingsdie_probabilitypy-18">18</a>
+<a href="#listingsdie_probabilitypy-19">19</a>
+<a href="#listingsdie_probabilitypy-20">20</a>
+<a href="#listingsdie_probabilitypy-21">21</a>
+<a href="#listingsdie_probabilitypy-22">22</a>
+<a href="#listingsdie_probabilitypy-23">23</a>
+<a href="#listingsdie_probabilitypy-24">24</a>
+<a href="#listingsdie_probabilitypy-25">25</a>
+<a href="#listingsdie_probabilitypy-26">26</a>
+<a href="#listingsdie_probabilitypy-27">27</a>
+<a href="#listingsdie_probabilitypy-28">28</a>
+<a href="#listingsdie_probabilitypy-29">29</a>
+<a href="#listingsdie_probabilitypy-30">30</a>
+<a href="#listingsdie_probabilitypy-31">31</a>
+<a href="#listingsdie_probabilitypy-32">32</a>
+<a href="#listingsdie_probabilitypy-33">33</a>
+<a href="#listingsdie_probabilitypy-34">34</a>
+<a href="#listingsdie_probabilitypy-35">35</a>
+<a href="#listingsdie_probabilitypy-36">36</a>
+<a href="#listingsdie_probabilitypy-37">37</a>
+<a href="#listingsdie_probabilitypy-38">38</a>
+<a href="#listingsdie_probabilitypy-39">39</a>
+<a href="#listingsdie_probabilitypy-40">40</a>
+<a href="#listingsdie_probabilitypy-41">41</a>
+<a href="#listingsdie_probabilitypy-42">42</a>
+<a href="#listingsdie_probabilitypy-43">43</a>
+<a href="#listingsdie_probabilitypy-44">44</a>
+<a href="#listingsdie_probabilitypy-45">45</a>
+<a href="#listingsdie_probabilitypy-46">46</a>
+<a href="#listingsdie_probabilitypy-47">47</a>
+<a href="#listingsdie_probabilitypy-48">48</a>
+<a href="#listingsdie_probabilitypy-49">49</a>
+<a href="#listingsdie_probabilitypy-50">50</a>
+<a href="#listingsdie_probabilitypy-51">51</a>
+<a href="#listingsdie_probabilitypy-52">52</a>
+<a href="#listingsdie_probabilitypy-53">53</a>
+<a href="#listingsdie_probabilitypy-54">54</a>
+<a href="#listingsdie_probabilitypy-55">55</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingsdie_probabilitypy-1"></a><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span>
+<a name="listingsdie_probabilitypy-2"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="listingsdie_probabilitypy-3"></a>
+<a name="listingsdie_probabilitypy-4"></a>
+<a name="listingsdie_probabilitypy-5"></a><span class="k">def</span> <span class="nf">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-6"></a>    <span class="s">'simulates rolling a die'</span>
+<a name="listingsdie_probabilitypy-7"></a>    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-8"></a>
+<a name="listingsdie_probabilitypy-9"></a>
+<a name="listingsdie_probabilitypy-10"></a><span class="k">def</span> <span class="nf">plot_fairness_line</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">side</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-11"></a>    <span class="sd">'''tests the difference between expected average and the real average</span>
+<a name="listingsdie_probabilitypy-12"></a><span class="sd">    produced after rolling a die for a range of trials.'''</span>
+<a name="listingsdie_probabilitypy-13"></a>    <span class="n">diff_data</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="listingsdie_probabilitypy-14"></a>    <span class="n">num_trials_data</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="listingsdie_probabilitypy-15"></a>    <span class="k">for</span> <span class="n">num_trials</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-16"></a>        <span class="n">side_count</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="listingsdie_probabilitypy-17"></a>        <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-18"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-19"></a>            <span class="k">if</span> <span class="n">result</span> <span class="o">==</span> <span class="n">side</span><span class="p">:</span>
+<a name="listingsdie_probabilitypy-20"></a>                <span class="n">side_count</span> <span class="o">+=</span> <span class="mi">1</span>
+<a name="listingsdie_probabilitypy-21"></a>
+<a name="listingsdie_probabilitypy-22"></a>        <span class="n">statistical_prb</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">6</span>
+<a name="listingsdie_probabilitypy-23"></a>        <span class="n">computed_prb</span> <span class="o">=</span> <span class="n">side_count</span> <span class="o">/</span> <span class="n">num_trials</span>
+<a name="listingsdie_probabilitypy-24"></a>        <span class="n">diff_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">computed_prb</span> <span class="o">-</span> <span class="n">statistical_prb</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-25"></a>        <span class="n">num_trials_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_trials</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-26"></a>
+<a name="listingsdie_probabilitypy-27"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">num_trials_data</span><span class="p">,</span> <span class="n">diff_data</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-28"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Number of trials ran on dice."</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-29"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Difference between expected and computed results"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-30"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-31"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<a name="listingsdie_probabilitypy-32"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-33"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a name="listingsdie_probabilitypy-34"></a>
+<a name="listingsdie_probabilitypy-35"></a><span class="n">plot_fairness_line</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-36"></a>
+<a name="listingsdie_probabilitypy-37"></a>
+<a name="listingsdie_probabilitypy-38"></a><span class="k">def</span> <span class="nf">plot_fairness_bar</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">num_trials</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-39"></a>    <span class="sd">'''rolls the die for "num_trials" times and calculates the number of</span>
+<a name="listingsdie_probabilitypy-40"></a><span class="sd">    times each side of the die was shown, it then shows a bar plot'''</span>
+<a name="listingsdie_probabilitypy-41"></a>    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}</span>
+<a name="listingsdie_probabilitypy-42"></a>    <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-43"></a>        <span class="n">data</span><span class="p">[</span><span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
+<a name="listingsdie_probabilitypy-44"></a>
+<a name="listingsdie_probabilitypy-45"></a>    <span class="n">x_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+<a name="listingsdie_probabilitypy-46"></a>    <span class="n">y_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+<a name="listingsdie_probabilitypy-47"></a>
+<a name="listingsdie_probabilitypy-48"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s">'center'</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-49"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-50"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"side of the die"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-51"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Number of times the number produced"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-52"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-53"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a name="listingsdie_probabilitypy-54"></a>
+<a name="listingsdie_probabilitypy-55"></a><span class="n">plot_fairness_bar</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
+</pre></td>
+</tr></table>
+</div>
+        <!--End of body content-->
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="dark">
+        <div class="container">
+	    <div class="copyright col-md-12 text-center">
+                
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="گواهینامه کریتیو کامنز" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>مطالب این وبسایت تحت گواهینامه بین‌المللی <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> در دسترس است.<br>Contents © 2015 <a href="mailto:ali.mousavi@gmail.com">Ali Mousavi</a> - Powered by <a href="http://getnikola.com" rel="nofollow">Nikola</a><br><a class="fa fa-rss-square fa-2x" href="../blog/rss.xml"></a>
+                
+            </div>
+	</div>
+    </div>
+</div>
+
+            <script src="../assets/js/all-nocdn.js"></script><script src="../assets/js/colorbox-i18n/jquery.colorbox-fa.js"></script><script>$('a.image-reference:not(.islink)').colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("fa");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
