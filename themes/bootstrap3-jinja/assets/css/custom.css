@@ -98,6 +98,18 @@ table.docutils td.label{
     font-size: 13px;
 }
 
+td.linenos {
+    width: 40px;
+}
+
+img {
+    margin-bottom: 20px;
+}
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+     margin-left: 0;
+}
+
 .title-bar{
     font-size: 62px;
     font-family: "Droid Arabic Naskh Bold", "nasim bold", serif;
@@ -167,4 +179,8 @@ table.docutils td.label{
 
 .footer a.fa.fa-rss-square:hover{
     color: #FF7500;
+}
+
+.MathJax span {
+    line-height: 1.4 !important;
 }

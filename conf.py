@@ -491,8 +491,8 @@ REDIRECTIONS = [("index.html", "blog/")]
 # to be visible on the site. The format is a dictionary of {source:
 # relative destination}.
 #
-# IMAGE_FOLDERS = {'images': ''}
-# IMAGE_THUMBNAIL_SIZE = 400
+IMAGE_FOLDERS = {'images': 'images'}
+IMAGE_THUMBNAIL_SIZE = 600
 
 # #############################################################################
 # HTML fragments and diverse things that are used by the templates
@@ -715,21 +715,22 @@ COMMENT_SYSTEM_ID = "alimsvi"
 # MATHJAX_CONFIG = ""
 
 # If you are using the compile-ipynb plugin, just add this one:
-# MATHJAX_CONFIG = """
-# <script type="text/x-mathjax-config">
-# MathJax.Hub.Config({
-#     tex2jax: {
-#         inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
-#         displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
-#         processEscapes: true
-#     },
-#     displayAlign: 'left', // Change this to 'center' to center equations.
-#     "HTML-CSS": {
-#         styles: {'.MathJax_Display': {"margin": 0}}
-#     }
-# });
-# </script>
-# """
+MATHJAX_CONFIG = """
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'left', // Change this to 'center' to center equations.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}},
+        scale: 70
+    }
+});
+</script>
+"""
 
 # Do you want to customize the nbconversion of your IPython notebook?
 # IPYNB_CONFIG = {}
