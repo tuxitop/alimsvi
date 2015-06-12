@@ -149,62 +149,124 @@ MathJax.Hub.Config({
 <a href="#listingsdie_probabilitypy-52">52</a>
 <a href="#listingsdie_probabilitypy-53">53</a>
 <a href="#listingsdie_probabilitypy-54">54</a>
-<a href="#listingsdie_probabilitypy-55">55</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsdie_probabilitypy-1"></a><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span>
-<a name="listingsdie_probabilitypy-2"></a><span class="kn">import</span> <span class="nn">random</span>
-<a name="listingsdie_probabilitypy-3"></a>
+<a href="#listingsdie_probabilitypy-55">55</a>
+<a href="#listingsdie_probabilitypy-56">56</a>
+<a href="#listingsdie_probabilitypy-57">57</a>
+<a href="#listingsdie_probabilitypy-58">58</a>
+<a href="#listingsdie_probabilitypy-59">59</a>
+<a href="#listingsdie_probabilitypy-60">60</a>
+<a href="#listingsdie_probabilitypy-61">61</a>
+<a href="#listingsdie_probabilitypy-62">62</a>
+<a href="#listingsdie_probabilitypy-63">63</a>
+<a href="#listingsdie_probabilitypy-64">64</a>
+<a href="#listingsdie_probabilitypy-65">65</a>
+<a href="#listingsdie_probabilitypy-66">66</a>
+<a href="#listingsdie_probabilitypy-67">67</a>
+<a href="#listingsdie_probabilitypy-68">68</a>
+<a href="#listingsdie_probabilitypy-69">69</a>
+<a href="#listingsdie_probabilitypy-70">70</a>
+<a href="#listingsdie_probabilitypy-71">71</a>
+<a href="#listingsdie_probabilitypy-72">72</a>
+<a href="#listingsdie_probabilitypy-73">73</a>
+<a href="#listingsdie_probabilitypy-74">74</a>
+<a href="#listingsdie_probabilitypy-75">75</a>
+<a href="#listingsdie_probabilitypy-76">76</a>
+<a href="#listingsdie_probabilitypy-77">77</a>
+<a href="#listingsdie_probabilitypy-78">78</a>
+<a href="#listingsdie_probabilitypy-79">79</a>
+<a href="#listingsdie_probabilitypy-80">80</a>
+<a href="#listingsdie_probabilitypy-81">81</a>
+<a href="#listingsdie_probabilitypy-82">82</a>
+<a href="#listingsdie_probabilitypy-83">83</a>
+<a href="#listingsdie_probabilitypy-84">84</a>
+<a href="#listingsdie_probabilitypy-85">85</a>
+<a href="#listingsdie_probabilitypy-86">86</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingsdie_probabilitypy-1"></a><span class="c">#! /bin/python2</span>
+<a name="listingsdie_probabilitypy-2"></a><span class="c">#  die-probability.py: a collection of tests about the theory of probability</span>
+<a name="listingsdie_probabilitypy-3"></a><span class="c">#  see: http://alimsvi.ir/blog/posts/ehtemal-dar-python-1.html</span>
 <a name="listingsdie_probabilitypy-4"></a>
-<a name="listingsdie_probabilitypy-5"></a><span class="k">def</span> <span class="nf">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">):</span>
-<a name="listingsdie_probabilitypy-6"></a>    <span class="s">'simulates rolling a die'</span>
-<a name="listingsdie_probabilitypy-7"></a>    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-8"></a>
-<a name="listingsdie_probabilitypy-9"></a>
-<a name="listingsdie_probabilitypy-10"></a><span class="k">def</span> <span class="nf">plot_fairness_line</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">side</span><span class="p">):</span>
-<a name="listingsdie_probabilitypy-11"></a>    <span class="sd">'''tests the difference between expected average and the real average</span>
-<a name="listingsdie_probabilitypy-12"></a><span class="sd">    produced after rolling a die for a range of trials.'''</span>
-<a name="listingsdie_probabilitypy-13"></a>    <span class="n">diff_data</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsdie_probabilitypy-14"></a>    <span class="n">num_trials_data</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="listingsdie_probabilitypy-15"></a>    <span class="k">for</span> <span class="n">num_trials</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
-<a name="listingsdie_probabilitypy-16"></a>        <span class="n">side_count</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="listingsdie_probabilitypy-17"></a>        <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
-<a name="listingsdie_probabilitypy-18"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-19"></a>            <span class="k">if</span> <span class="n">result</span> <span class="o">==</span> <span class="n">side</span><span class="p">:</span>
-<a name="listingsdie_probabilitypy-20"></a>                <span class="n">side_count</span> <span class="o">+=</span> <span class="mi">1</span>
-<a name="listingsdie_probabilitypy-21"></a>
-<a name="listingsdie_probabilitypy-22"></a>        <span class="n">statistical_prb</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">6</span>
-<a name="listingsdie_probabilitypy-23"></a>        <span class="n">computed_prb</span> <span class="o">=</span> <span class="n">side_count</span> <span class="o">/</span> <span class="n">num_trials</span>
-<a name="listingsdie_probabilitypy-24"></a>        <span class="n">diff_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">computed_prb</span> <span class="o">-</span> <span class="n">statistical_prb</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-25"></a>        <span class="n">num_trials_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_trials</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-26"></a>
-<a name="listingsdie_probabilitypy-27"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">num_trials_data</span><span class="p">,</span> <span class="n">diff_data</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-28"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Number of trials ran on dice."</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-29"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Difference between expected and computed results"</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-30"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-31"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
-<a name="listingsdie_probabilitypy-32"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-33"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<a name="listingsdie_probabilitypy-34"></a>
-<a name="listingsdie_probabilitypy-35"></a><span class="n">plot_fairness_line</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-36"></a>
-<a name="listingsdie_probabilitypy-37"></a>
-<a name="listingsdie_probabilitypy-38"></a><span class="k">def</span> <span class="nf">plot_fairness_bar</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">num_trials</span><span class="p">):</span>
-<a name="listingsdie_probabilitypy-39"></a>    <span class="sd">'''rolls the die for "num_trials" times and calculates the number of</span>
-<a name="listingsdie_probabilitypy-40"></a><span class="sd">    times each side of the die was shown, it then shows a bar plot'''</span>
-<a name="listingsdie_probabilitypy-41"></a>    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}</span>
-<a name="listingsdie_probabilitypy-42"></a>    <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
-<a name="listingsdie_probabilitypy-43"></a>        <span class="n">data</span><span class="p">[</span><span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
-<a name="listingsdie_probabilitypy-44"></a>
-<a name="listingsdie_probabilitypy-45"></a>    <span class="n">x_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
-<a name="listingsdie_probabilitypy-46"></a>    <span class="n">y_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
-<a name="listingsdie_probabilitypy-47"></a>
-<a name="listingsdie_probabilitypy-48"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s">'center'</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-49"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-50"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"side of the die"</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-51"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Number of times the number produced"</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-52"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
-<a name="listingsdie_probabilitypy-53"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<a name="listingsdie_probabilitypy-54"></a>
-<a name="listingsdie_probabilitypy-55"></a><span class="n">plot_fairness_bar</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-5"></a><span class="c"># Copyright (c) 2015 Ali Mousavi</span>
+<a name="listingsdie_probabilitypy-6"></a><span class="c">#</span>
+<a name="listingsdie_probabilitypy-7"></a><span class="c"># Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<a name="listingsdie_probabilitypy-8"></a><span class="c"># of this software and associated documentation files (the "Software"), to deal</span>
+<a name="listingsdie_probabilitypy-9"></a><span class="c"># in the Software without restriction, including without limitation the rights</span>
+<a name="listingsdie_probabilitypy-10"></a><span class="c"># to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<a name="listingsdie_probabilitypy-11"></a><span class="c"># copies of the Software, and to permit persons to whom the Software is</span>
+<a name="listingsdie_probabilitypy-12"></a><span class="c"># furnished to do so, subject to the following conditions:</span>
+<a name="listingsdie_probabilitypy-13"></a><span class="c">#</span>
+<a name="listingsdie_probabilitypy-14"></a><span class="c"># The above copyright notice and this permission notice shall be included in</span>
+<a name="listingsdie_probabilitypy-15"></a><span class="c"># all copies or substantial portions of the Software.</span>
+<a name="listingsdie_probabilitypy-16"></a><span class="c">#</span>
+<a name="listingsdie_probabilitypy-17"></a><span class="c"># THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<a name="listingsdie_probabilitypy-18"></a><span class="c"># IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<a name="listingsdie_probabilitypy-19"></a><span class="c"># FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<a name="listingsdie_probabilitypy-20"></a><span class="c"># AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<a name="listingsdie_probabilitypy-21"></a><span class="c"># LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<a name="listingsdie_probabilitypy-22"></a><span class="c"># OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
+<a name="listingsdie_probabilitypy-23"></a><span class="c"># SOFTWARE.</span>
+<a name="listingsdie_probabilitypy-24"></a>
+<a name="listingsdie_probabilitypy-25"></a><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span>
+<a name="listingsdie_probabilitypy-26"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="listingsdie_probabilitypy-27"></a>
+<a name="listingsdie_probabilitypy-28"></a>
+<a name="listingsdie_probabilitypy-29"></a><span class="k">def</span> <span class="nf">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">true_random</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-30"></a>    <span class="sd">'''simulates rolling a die, if true_random is set, it will use random.org</span>
+<a name="listingsdie_probabilitypy-31"></a><span class="sd">    to produce true random numbers. be careful though, it might take a lot</span>
+<a name="listingsdie_probabilitypy-32"></a><span class="sd">    of time and the difference is really not that much.'''</span>
+<a name="listingsdie_probabilitypy-33"></a>    <span class="k">if</span> <span class="n">true_random</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span>
+<a name="listingsdie_probabilitypy-34"></a>        <span class="kn">import</span> <span class="nn">randomdotorg</span>
+<a name="listingsdie_probabilitypy-35"></a>        <span class="n">r</span> <span class="o">=</span> <span class="n">randomdotorg</span><span class="o">.</span><span class="n">RandomDotOrg</span><span class="p">(</span><span class="s">'alimsvi.ir'</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-36"></a>        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-37"></a>    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-38"></a>
+<a name="listingsdie_probabilitypy-39"></a>
+<a name="listingsdie_probabilitypy-40"></a><span class="k">def</span> <span class="nf">plot_fairness_line</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">,</span> <span class="n">side</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-41"></a>    <span class="sd">'''tests the difference between expected average and the real average</span>
+<a name="listingsdie_probabilitypy-42"></a><span class="sd">    produced after rolling a die for a range of trials.'''</span>
+<a name="listingsdie_probabilitypy-43"></a>    <span class="n">diff_data</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="listingsdie_probabilitypy-44"></a>    <span class="n">num_trials_data</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="listingsdie_probabilitypy-45"></a>    <span class="k">for</span> <span class="n">num_trials</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_trials</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-46"></a>        <span class="n">side_count</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="listingsdie_probabilitypy-47"></a>        <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-48"></a>            <span class="n">result</span> <span class="o">=</span> <span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-49"></a>            <span class="k">if</span> <span class="n">result</span> <span class="o">==</span> <span class="n">side</span><span class="p">:</span>
+<a name="listingsdie_probabilitypy-50"></a>                <span class="n">side_count</span> <span class="o">+=</span> <span class="mi">1</span>
+<a name="listingsdie_probabilitypy-51"></a>
+<a name="listingsdie_probabilitypy-52"></a>        <span class="n">statistical_prb</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="mi">6</span>
+<a name="listingsdie_probabilitypy-53"></a>        <span class="n">computed_prb</span> <span class="o">=</span> <span class="n">side_count</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">num_trials</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-54"></a>        <span class="n">diff_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">computed_prb</span> <span class="o">-</span> <span class="n">statistical_prb</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-55"></a>        <span class="n">num_trials_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num_trials</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-56"></a>
+<a name="listingsdie_probabilitypy-57"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">num_trials_data</span><span class="p">,</span> <span class="n">diff_data</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-58"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"Number of trials ran on dice."</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-59"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Difference between expected and computed results"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-60"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-61"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylim</span><span class="p">((</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<a name="listingsdie_probabilitypy-62"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-63"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a name="listingsdie_probabilitypy-64"></a>
+<a name="listingsdie_probabilitypy-65"></a><span class="n">plot_fairness_line</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">10000</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-66"></a>
+<a name="listingsdie_probabilitypy-67"></a>
+<a name="listingsdie_probabilitypy-68"></a><span class="k">def</span> <span class="nf">plot_fairness_bar</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">num_trials</span><span class="p">,</span> <span class="n">true_random</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-69"></a>    <span class="sd">'''rolls the die for "num_trials" times and calculates the number of</span>
+<a name="listingsdie_probabilitypy-70"></a><span class="sd">    times each side of the die was shown, it then shows a bar plot'''</span>
+<a name="listingsdie_probabilitypy-71"></a>    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_sides</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}</span>
+<a name="listingsdie_probabilitypy-72"></a>    <span class="k">for</span> <span class="n">dummy_idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
+<a name="listingsdie_probabilitypy-73"></a>        <span class="n">data</span><span class="p">[</span><span class="n">roll_die</span><span class="p">(</span><span class="n">num_sides</span><span class="p">,</span> <span class="n">true_random</span><span class="p">)]</span> <span class="o">+=</span> <span class="mi">1</span>
+<a name="listingsdie_probabilitypy-74"></a>
+<a name="listingsdie_probabilitypy-75"></a>    <span class="n">x_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+<a name="listingsdie_probabilitypy-76"></a>    <span class="n">y_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+<a name="listingsdie_probabilitypy-77"></a>
+<a name="listingsdie_probabilitypy-78"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_data</span><span class="p">,</span> <span class="n">y_data</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s">'center'</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-79"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Fairness of a Die in Python"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-80"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">"side of the die"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-81"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">"Number of times the number produced"</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-82"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-83"></a>    <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a name="listingsdie_probabilitypy-84"></a>
+<a name="listingsdie_probabilitypy-85"></a><span class="n">plot_fairness_bar</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3000</span><span class="p">)</span>
+<a name="listingsdie_probabilitypy-86"></a><span class="n">plot_fairness_bar</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="n">true_random</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></td>
 </tr></table>
 </div>
