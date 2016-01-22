@@ -57,6 +57,6 @@ docs/_build/
 target/
 
 # Nikola Stuff
-output/
-cache/
+output
+cache
 .doit.db
