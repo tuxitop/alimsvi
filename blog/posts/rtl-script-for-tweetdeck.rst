@@ -1,7 +1,7 @@
 .. title: اسکریپت اصلاح نمایش راست به چپ توییت‌دک
 .. slug: rtl-script-for-tweetdeck
 .. date: 2015-11-03 22:16:29 UTC+03:30
-.. tags: جاوااسکریپت, توییتر, draft
+.. tags: جاوااسکریپت, توییتر
 .. category: برنامه‌نویسی
 .. link: 
 .. description: 
