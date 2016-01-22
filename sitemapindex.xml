@@ -11,7 +11,7 @@
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/cat_brnmhnwysy.xml</loc>
-  <lastmod>2016-01-22T10:56:00Z</lastmod>
+  <lastmod>2016-01-22T11:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/cat_trhy-wb.xml</loc>
@@ -20,6 +20,10 @@
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/gyt.xml</loc>
   <lastmod>2015-10-19T20:27:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://alimsvi.ir/blog/categories/jwskhrypt.xml</loc>
+  <lastmod>2016-01-22T11:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/mathjax.xml</loc>
@@ -46,11 +50,15 @@
   <lastmod>2015-10-19T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://alimsvi.ir/blog/categories/twyytr.xml</loc>
+  <lastmod>2016-01-22T11:45:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://alimsvi.ir/blog/rss.xml</loc>
-  <lastmod>2016-01-22T10:56:00Z</lastmod>
+  <lastmod>2016-01-22T11:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/sitemap.xml</loc>
-  <lastmod>2016-01-22T10:56:00Z</lastmod>
+  <lastmod>2016-01-22T11:45:00Z</lastmod>
  </sitemap>
 </sitemapindex>

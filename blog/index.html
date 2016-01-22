@@ -92,7 +92,40 @@ MathJax.Hub.Config({
         <div class="row">
             
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ehtemal-dar-python-1.html" class="u-url">بررسی نظریه احتمالات در پایتون</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/rtl-script-for-tweetdeck.html" class="u-url">اسکریپت اصلاح نمایش راست به چپ توییت‌دک</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                علی موسوی
+            </span></p>
+            <p class="dateline"><a href="posts/rtl-script-for-tweetdeck.html" rel="bookmark"><time class="published dt-published" datetime="2015-11-03T22:16:29+03:30" title="03 نوامبر 2015">03 نوامبر 2015</time></a></p>
+                <p class="commentline">            <a href="posts/rtl-script-for-tweetdeck.html#disqus_thread" data-disqus-identifier="cache/blog/posts/rtl-script-for-tweetdeck.html">دیدگاه‌ها</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>اگر از کاربران <a class="reference external" href="https://twitter.com">توییتر</a> باشید و تعداد افرادی که توییت‌‌هاشون رو دنبال می‌کنید زیاد باشند، احتمال داره که برای دسته‌بندی توییت‌ها، <a class="reference external" href="https://tweetdeck.twitter.com">توییت‌دک</a> رو امتحان کرده باشید. توییت‌دک دنبال کردن لیست‌های مختلف و همچنین هشتگ‌ها رو ساده‌تر می‌کنه و با نمایش چند ستون در کنار هم این امکان را فراهم می‌کنه که تعداد بیشتری از توییت‌ها رو در یک صفحه جلوی چشم داشته باشید.</p>
+<a class="reference external image-reference" href="../images/tweetdeck_sample_ltr.jpg"><img alt="/images/tweetdeck_sample_ltr.thumbnail.jpg" class="align-center" src="../images/tweetdeck_sample_ltr.thumbnail.jpg"></a>
+<p>اما همین‌طور که در عکس می‌بینید، برخلاف صفحه‌ی اصلی توییتر، توییت‌دک توییت‌های فارسی رو هم از چپ به راست نمایش می‌ده و این قضیه خوندن بعضی توییت‌ها رو مشکل می‌کنه. برای حل این مشکل و تغییر دادن نحوه نمایش توییت‌های فارسی توییت‌دک،با استفاده از جاوااسکریپت یک اسکریپت نوشتم که توییت‌های فارسی رو پیدا کنه و اون‌ها رو از راست به چپ نمایش بده. خوبی این روش اینه که <strong>فقط نمایش توییت‌های فارسی تغییر می‌کنه و توییت‌های انگلیسی تغییری نمی‌کنن</strong>.</p>
+<a class="reference external image-reference" href="../images/tweetdeck_sample_rtl.jpg"><img alt="/images/tweetdeck_sample_rtl.thumbnail.jpg" class="align-center" src="../images/tweetdeck_sample_rtl.thumbnail.jpg"></a>
+<div class="section" id="id3">
+<h2>نصب اسکریپت</h2>
+<p>به اسکریپت‌های جاوااسکریپتی که به این شکل برای تغییر عملکرد صفحه‌های وب نوشته می‌شن <a class="reference external" href="https://github.com/OpenUserJs/OpenUserJS.org/wiki/Userscript-beginners-HOWTO">user script</a> می‌گن و برای نصبشون در هر مرورگر، باید از افزونه‌ی خاص اون مرورگر استفاده کرد. بنابراین کافیه که مراحل زیر رو انجام بدین تا بتونید این اسکریپت رو نصب و ازش استفاده کنید.</p>
+<p>۱- نصب افزونه <a class="reference external" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">تمپرمانکی</a> برای مرورگر گوگل کروم و یا نصب افزونه <a class="reference external" href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">گریزمانکی</a> برای مرورگر فایرفاکس (پس از نصب باید فایرفاکس را بسته و دوباره باز کنید).</p>
+<p>۲- مراجعه به
+<a class="reference external" href="https://gist.github.com/tuxitop/f114fad8ea2ea02047dc">صفحه اسکریپت اصلاح نمایش راست به چپ توییت‌دک</a>
+در گیت‌هاب، کلیک بر روی دکمه‌ی <tt class="docutils literal">Raw</tt> و نصب اسکریپت.</p>
+</div>
+<div class="section" id="id7">
+<h2>نحوه کار</h2>
+<p>برای نوشتن اسکریپت از کتابخانه‌ی JQuery و یکی از پلاگین‌های اون به اسم livequery استفاده کردم. توضیح جی‌کوئری و کاربرد اون از حیطه‌ی این پست خارجه اما پلاگین livequery به درد مواقعی می‌خوره که محتوای صفحه دائم در حال تغییره و بخش‌های جدیدی به صفحه اضافه می‌شه. در مورد اسکریپت ما این پلاگین منتظر می‌مونه تا توییت‌های جدید به صفحه‌ی توییت‌دک اضافه بشن و بعد اون‌ها رو به نحوی که مد نظر ماست تغییر می‌ده.</p>
+<p>در واقع ما با کمک جی‌کوئری و لایوکوئری منتظر توییت‌های جدید می‌مونیم و بعد هر کدوم از اون‌ها رو بررسی می‌کیم که ببینیم چه تعداد کاراکتر راست به چپ در اون‌ها استفاده شده تا اگر لازم بود، توییت رو به صورت راست به چپ نمایش بده.</p>
+<p>من در حال حاضر این اسکریپت رو چند ماه می‌شه که خودم امتحان کردم و بارها نحوه‌ی عملکرد اون رو بهبود دادم تا توییت‌های فارسی رو به خوبی تشخیص بده. در صورتی که شما هم از این اسکریپت استفاده کردید و نظر یا پیشنهادی برای بهبودش داشتید حتما برای من کامنت بذارید.</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ehtemal-dar-python-1.html" class="u-url">بررسی نظریه احتمالات در پایتون</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 علی موسوی
