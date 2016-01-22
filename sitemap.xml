@@ -1,83 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://alimsvi.ir/blog/2015/index.html</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/archive.html</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/brnmhnwysy.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/cat_brnmhnwysy.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/cat_trhy-wb.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/gyt.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/index.html</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/mathjax.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/nrmfzr-azd.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/nykhwl.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/pytwn.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/rydyt.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/trhy-wb.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/index.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/posts/ehtemal-dar-python-1.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/posts/salam-donya.html</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/listings/die_probability.py.html</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/listings/hello.py.html</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/listings/index.html</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2016-01-21T19:05:00Z</lastmod>
  </url>
 </urlset>

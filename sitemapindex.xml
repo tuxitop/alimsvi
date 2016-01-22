@@ -1,55 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/brnmhnwysy.xml</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/cat_brnmhnwysy.xml</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/cat_trhy-wb.xml</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2015-10-19T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/gyt.xml</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2015-10-19T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/mathjax.xml</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/nrmfzr-azd.xml</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2015-10-19T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/nykhwl.xml</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2015-10-19T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/pytwn.xml</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/rydyt.xml</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/categories/trhy-wb.xml</loc>
-  <lastmod>2015-06-12</lastmod>
+  <lastmod>2015-10-19T20:27:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/blog/rss.xml</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://alimsvi.ir/sitemap.xml</loc>
-  <lastmod>2015-06-13</lastmod>
+  <lastmod>2016-01-22T10:56:00Z</lastmod>
  </sitemap>
 </sitemapindex>
