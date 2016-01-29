@@ -7,19 +7,23 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://alimsvi.ir/blog/2015/index.html</loc>
-  <lastmod>2016-01-22T11:45:00Z</lastmod>
+  <lastmod>2016-01-29T16:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://alimsvi.ir/blog/2016/index.html</loc>
+  <lastmod>2016-01-29T16:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/archive.html</loc>
-  <lastmod>2016-01-22T11:45:00Z</lastmod>
+  <lastmod>2016-01-29T16:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/brnmhnwysy.html</loc>
-  <lastmod>2016-01-22T10:56:00Z</lastmod>
+  <lastmod>2016-01-29T16:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/cat_brnmhnwysy.html</loc>
-  <lastmod>2016-01-22T11:45:00Z</lastmod>
+  <lastmod>2016-01-29T16:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/cat_trhy-wb.html</loc>
@@ -35,7 +39,7 @@
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/jwskhrypt.html</loc>
-  <lastmod>2016-01-22T11:45:00Z</lastmod>
+  <lastmod>2016-01-29T16:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/mathjax.html</loc>
@@ -63,19 +67,23 @@
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/categories/twyytr.html</loc>
-  <lastmod>2016-01-22T11:45:00Z</lastmod>
+  <lastmod>2016-01-29T16:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/index.html</loc>
-  <lastmod>2016-01-22T11:45:00Z</lastmod>
+  <lastmod>2016-01-29T16:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/posts/ehtemal-dar-python-1.html</loc>
   <lastmod>2016-01-22T11:45:00Z</lastmod>
  </url>
  <url>
+  <loc>http://alimsvi.ir/blog/posts/how-to-start-programming.html</loc>
+  <lastmod>2016-01-29T16:53:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://alimsvi.ir/blog/posts/rtl-script-for-tweetdeck.html</loc>
-  <lastmod>2016-01-22T11:45:00Z</lastmod>
+  <lastmod>2016-01-29T16:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://alimsvi.ir/blog/posts/salam-donya.html</loc>
